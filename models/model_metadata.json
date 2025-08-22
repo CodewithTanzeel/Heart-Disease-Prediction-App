@@ -1,0 +1,43 @@
+{
+    "dataset": "UCI Heart Disease",
+    "target": "target",
+    "features": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+    ],
+    "scaler": {
+        "type": "StandardScaler",
+        "path": "models/scaler.pkl"
+    },
+    "models": [
+        {
+            "name": "Logistic Regression",
+            "file": "models/logistic_regression.pkl",
+            "type": "classification",
+            "framework": "scikit-learn"
+        },
+        {
+            "name": "Decision Tree",
+            "file": "models/decision_tree.pkl",
+            "type": "classification",
+            "framework": "scikit-learn"
+        },
+        {
+            "name": "Random Forest",
+            "file": "models/random_forest.pkl",
+            "type": "classification",
+            "framework": "scikit-learn"
+        }
+    ]
+}
